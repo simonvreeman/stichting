@@ -9,7 +9,14 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-2826482-23');
+      gtag('config', 'UA-2826482-23', {
+        'transport_type': 'beacon',
+        'link_attribution': false,
+        'allow_display_features': false,
+        'anonymize_ip': true,
+        'sampleRate': 100,
+        'siteSpeedSampleRate': 100
+      });
     </script>
     <style>
       body {
